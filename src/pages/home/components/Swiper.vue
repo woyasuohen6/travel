@@ -2,7 +2,7 @@
    <div class="wrapper"> 
         <swiper :options="swiperOption">
             <swiper-slide v-for="item of swiperList" :key="item.id">
-                <img class="swiper-img" src="https://www.baidu.com/img/bd_logo1.png" alt="">
+                <img class="swiper-img" :src="item.imgUrl" alt="">
             </swiper-slide>
             <div class="swiper-pagination"  slot="pagination"></div>
         </swiper>
@@ -20,13 +20,13 @@ export default {
             },
             swiperList: [{
                 id: '0001',
-                imgUrl: ''
+                imgUrl: 'http://img1.qunarzz.com/piao/fusion/1802/42/7c92b9a381e46402.jpg_640x200_1cdce2a4.jpg'
             },{
-                id: '0001',
-                imgUrl: ''
+                id: '0002',
+                imgUrl: 'http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20193/87a224d0349d94a11e97f31aa1aba4f5.jpg_750x200_1f78af87.jpg'
             },{
-                id: '0001',
-                imgUrl: ''
+                id: '0003',
+                imgUrl: 'http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20193/87a224d0349d94a11e97f31aa1aba4f5.jpg_750x200_1f78af87.jpg'
             }]
         }
     }
@@ -34,14 +34,14 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.wrapper>>> swiper-pagination-bullet-active
-    background red
-.wrapper
-    width 100%
-    height 0
-    overflow hidden
-    padding-bottom 31.25%
-    background-color #eee
-    .swiper-img
-        width 100%
+    .wrapper >>> .swiper-pagination-bullet-active
+        background: #fff !important
+    .wrapper
+        width: 100%
+        height: 0
+        overflow: hidden
+        background: #eee
+        padding-bottom: 31.25%
+        .swiper-img
+            width: 100%
 </style>
