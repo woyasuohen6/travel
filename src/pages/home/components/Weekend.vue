@@ -2,7 +2,7 @@
     <div>
         <div class="title">周末去哪儿</div>
         <ul>
-            <li v-for="item of recommedList" 
+            <li v-for="item of list" 
                 :key="item.id" 
                 class="item border-buttom">
                 <div class="item-img-wrapper">
@@ -20,6 +20,9 @@
 <script>
 export default {
   name: 'HomeWeekend',
+  props: {
+      list: Array
+  },
   data() {
       return {
           recommedList: [{
@@ -56,14 +59,13 @@ export default {
 <style lang="stylus" scoped>
 @import '~styles/mixins.styl'
 .title
-    margin-top: .2rem
     line-height: .8rem
     background: #eee
     text-indent: .2rem
 .item-img-wrapper
     overflow hidden
     height 0
-    padding-bottom 33.9%
+    padding-bottom 37.09%
     .item-img
         width: 100%
 .item-info

@@ -2,7 +2,7 @@
     <div>
         <div class="title">热销推荐</div>
         <ul>
-            <li v-for="item of recommedList" 
+            <li v-for="item of list" 
                 :key="item.id" 
                 class="item border-buttom">
                     <img :src="item.imgUrl" class="item-img" alt="">
@@ -19,34 +19,11 @@
 <script>
 export default {
   name: 'HomeRecommend',
+  props: {
+    list: Array
+  },
   data() {
       return {
-          recommedList: [{
-          id: '0001',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg',
-          title: '北京温泉排行榜',
-          desc: '细数北京温泉，温暖你的冬天'
-      },{
-          id: '0002',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg',
-          title: '北京温泉排行榜',
-          desc: '细数北京温泉，温暖你的冬天'
-      },{
-          id: '0003',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg',
-          title: '北京温泉排行榜',
-          desc: '细数北京温泉，温暖你的冬天'
-      },{
-          id: '0004',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg',
-          title: '北京温泉排行榜',
-          desc: '细数北京温泉，温暖你的冬天'
-      },{
-          id: '0005',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg',
-          title: '北京温泉排行榜',
-          desc: '细数北京温泉，温暖你的冬天'
-      }]
       }
   }
 }
