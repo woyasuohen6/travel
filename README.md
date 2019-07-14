@@ -11,3 +11,20 @@
 ![](https://github.com/woyasuohen6/travel/blob/master/introduction-img/1.PNG)
 ![](https://github.com/woyasuohen6/travel/blob/master/introduction-img/2.PNG)
 ![](https://github.com/woyasuohen6/travel/blob/master/introduction-img/3.PNG)
+
+## 项目介绍
+
+### 技术栈
+
+*使用 vue-cli 构建项目*
+***
+- vue
+- vue-router
+- vuex
+- stylus
+
+### 插件
+
+- better-scroll
+- vue awsome-swiper
+- fast-click
